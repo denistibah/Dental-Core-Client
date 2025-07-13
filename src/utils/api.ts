@@ -4,9 +4,14 @@ import { User, Patient, Appointment } from '../types';
 import { signInWithEmailAndPassword } from 'firebase/auth'
 import { firebaseAuth } from '../firebase/firebase';
 
-const API_URL = 'https://dental-backend-y8kz.onrender.com/api'; // Replace with your actual API URL
+// const API_URL = 'https://dental-backend-y8kz.onrender.com/api'; // Replace with your actual API URL
+// const API = axios.create({
+//     baseURL: 'https://dental-backend-y8kz.onrender.com/api', // update if deployed
+// });
+
+const API_URL = 'dent-core-server.vercel.app/api'; // Replace with your actual API URL
 const API = axios.create({
-    baseURL: 'https://dental-backend-y8kz.onrender.com/api', // update if deployed
+    baseURL: 'dent-core-server.vercel.app/api', // update if deployed
 });
 
 // Add an interceptor to set the token in the headers
